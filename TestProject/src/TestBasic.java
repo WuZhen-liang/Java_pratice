@@ -14,6 +14,9 @@ public class TestBasic {
 		BigDecimal bd = new BigDecimal("10.123");
 		BigDecimal bd1 = new BigDecimal(10.123);
 		System.out.println(bd+"/n"+bd1);
+		if (j > 200) {
+			System.out.println("over 200.");
+		}
 	}
 
 }
