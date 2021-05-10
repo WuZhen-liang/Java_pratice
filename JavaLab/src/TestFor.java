@@ -80,9 +80,18 @@ public class TestFor {
 				}
 				System.out.println(k);
 			}
-	
-	
-	
+// -------------進階for迴圈--------------
+/*		for(宣告 : 陣列){
+	}		
+*/		
+			int[] ages = new int[3]; //預設值為:0
+			
+			ages[0] = 1; //第一格起始位置是0
+			ages[1] = 2;
+			ages[2] = 3;		
+			for(int m : ages) {
+				System.out.println(m);
+			}
 	
 	}
 
