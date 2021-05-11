@@ -5,21 +5,22 @@ import java.awt.Color;
 import com.sun.jndi.url.iiopname.iiopnameURLContextFactory;
 
 public class Car {
+	private String model;  //預設值:null
+	private int price;     //預設值: 0
+	private char color;    //預設值:''
 //下方程式為建構方法:Constructor
 	public Car(char c) {  //初始化預設內容
-		color = c;
+		this("Yaris", c); //this():呼叫另一個建構方法->一定要在第一行
+//		color = c;
 	}
+	
 	public Car(String model,char color) {  //初始化預設內容
 //		this.model = model;
 		setModel(model);
 		this.color = color;
 		}
+		
 //========================================	
-	private String model;  //預設值:null
-	private int price;     //預設值: 0
-	private char color;    //預設值:''
-	
-	
 	public String getModel() {
 		return model;
 	}

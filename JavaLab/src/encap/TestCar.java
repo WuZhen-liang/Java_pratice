@@ -4,7 +4,8 @@ public class TestCar {
 
 	public static void main(String[] args) {
 //      encapsulation封裝 		
-		Car c = new Car("Yaris",'Y'); //產生物件
+		Car c = new Car('Y'); //產生物件
+//		Car c = new Car("Yaris",'Y'); //產生物件
 //		c.model = "Prius";
 //		c.setModel("Prius");
 //		c.setModel("Yaris");
