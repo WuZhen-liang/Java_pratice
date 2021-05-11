@@ -11,8 +11,9 @@ public class People {
 // 下方都是物件屬性跟方法,都需要new才能使用	
 	double height;
 	double weight;
-	public double getBMI() {
-		double BMI = weight/(height * height);
+	public double getBMI() {  //物件方法是可以呼叫Static靜態方法
+//		double BMI = weight/(height * height);
+		double BMI = People.BMI(height, weight);
 		return BMI;
 	}
 	
