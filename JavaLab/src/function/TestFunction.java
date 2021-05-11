@@ -4,7 +4,7 @@ public class TestFunction {
 
 	public static void main(String[] args) {
 //      修飾存取    回傳值 方法名稱(傳入參數1,傳入參數2,..)   		
-		add(1, 1);
+		add(1, 1); //void,不會有回傳
 		int sum = add1(1, 1);
 		System.out.println("sum="+sum);
 //		System.out.println(sum);
@@ -17,13 +17,13 @@ public class TestFunction {
 		System.out.println("c="+c);
 	}
 //		return c;    //宣告void 不能有return
-	public static int add1(int a,int b) {
+	public static int add1(int a,int b) { //靜態方法只能呼叫靜態物件
 		
 		int c = a + b; // c = 1 + 1
-		return c;
+		return c;   
 	}
 
-	
+
 
 
 

@@ -56,7 +56,7 @@ public class TestIf {
 		default:
 			System.out.println("其他");		
 		}
-	
+
 		
 	}
 }
