@@ -13,7 +13,13 @@ public class NoteBook extends Product{
 		setPrice(price);
 		this.warranty = warranty;
 	}
-
+//-----------Override:重新改寫父類別的方法-----------------	
+	//annotation
+	@Override
+		public String desc() {
+		return String.format("名稱：%s,價錢:%d,保固:%d天",name,price,warranty);
+		}
+	
 	public int getWarranty() {
 		return warranty;
 	}
