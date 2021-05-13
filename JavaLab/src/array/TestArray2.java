@@ -26,9 +26,9 @@ public class TestArray2 {
 	    	執行內容
 	    	}		
 */		    
-	    for (int[] a : x ) {
-	    	for(int k :  a) {
-	    		System.out.println(k);
+//	    for (int[] a : x ) {
+//	    	for(int k :  a) {
+//	    		System.out.println(k);
 	    	}
 	    }
 		

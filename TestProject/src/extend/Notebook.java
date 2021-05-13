@@ -22,7 +22,6 @@ public class Notebook extends Product {
 	}
 	@Override
 	public String desc() {
-		System.out.println("");
 		return "123 ";
 	}
 }
