@@ -1,4 +1,5 @@
 package interFace;
+import java.io.Serializable;
 // java.sql.Date:JDBC
 import java.util.Date;
 
