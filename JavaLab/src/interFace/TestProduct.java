@@ -1,4 +1,4 @@
-package extend;
+package interFace;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -32,10 +32,13 @@ public class TestProduct {
 		Food food = new Food("肉鬆",200, date);
 		System.out.println(food.desc());
 		
+		SimCard sim = new SimCard("日本漫遊", 600, Product.getDate(2021, 5, 12));
+		
 //		Product[] items = new Product[] {nb,food};
 		Product[] items = {nb,food};
 		buy(items);
 	}
+
 //	public static void buy(Food f) {
 //		System.out.println("買入:"+f.desc());
 //		
