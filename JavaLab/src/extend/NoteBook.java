@@ -6,11 +6,12 @@ public class NoteBook extends Product{
 //	public int price;
 	public int warranty;
 	
-	public NoteBook(String name, int price, int warranty) {
+	public NoteBook(String store,String name, int price, int warranty) {
 //		this.name = name;  //若父類別屬性改成private無法使用this
 //		this.price = price; //宣告　protected：子列別＆同個package 可以看到屬性
 		setName(name);
 		setPrice(price);
+		setStore(store);
 		this.warranty = warranty;
 	}
 //-----------Override:重新改寫父類別的方法-----------------	

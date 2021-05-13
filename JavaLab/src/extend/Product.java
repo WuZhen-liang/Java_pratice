@@ -5,10 +5,13 @@ public class Product {
 //	public String name;
 	protected String name;
 	protected int price;
+	public String store;
 	
-	public Product(String name, int price) {
+	public Product(String name, int price, String store) {
 		this.name = name;
 		this.price = price;
+		this.store = store;
+		
 	}
 
 	public Product() {
@@ -32,8 +35,13 @@ public class Product {
 	public String desc() {
 		return String.format("名稱：%s,價錢:%d", name,price);
 	}
-	
-	
+	public void setStore(String store) {
+		this.store = store;
+		
+	}
+	public String getStore() {
+		return store;
+	}
 	
 	
 }
