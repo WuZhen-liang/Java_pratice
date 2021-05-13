@@ -14,7 +14,7 @@ public  class NoteBook extends Product{
 	
 	public NoteBook(String name, int price, int warranty) {
 //		super();//compiler會自動加一個在這裡
-		super(name,price);
+		super(name,price); //直接呼叫建構方法
 //		this.name = name;  //若父類別屬性改成private無法使用this
 //		this.price = price; //宣告　protected：子列別＆同個package 可以看到屬性
 //		setName(name);
