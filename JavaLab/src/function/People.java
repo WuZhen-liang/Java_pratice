@@ -3,7 +3,7 @@ package function;
 public class People {
 	//static都不需要物件,也無法用物件的屬性
 	//定義常數表示過重
-	static double overWeightBMI = 24.0;
+	static  double overWeightBMI = 24.0;
 	
 	public static double BMI(double h,double w) {
 		return w / ( h * h );
