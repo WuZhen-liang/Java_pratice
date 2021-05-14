@@ -1,0 +1,2 @@
+select * from emp where comm is  null;
+select * from emp where comm is not null; 

@@ -1,0 +1,35 @@
+select empno,ename,job,sal,deptno,
+	  case 
+			when sal<1500 then sal*0.05
+			when sal>1500 and sal<=2000 then sal*0.06
+			when sal>2001 and sal<=3000 then sal*0.01
+			when sal>3000 then sal*0.15
+			else sal
+	  end 'Tax'
+from emp 
+where sal>2000
+order by sal;    //小到大排列
+
+select empno,ename,job,sal,deptno,
+	  case 
+			when sal<1500 then sal*0.05
+			when sal>1500 and sal<=2000 then sal*0.06
+			when sal>2001 and sal<=3000 then sal*0.01
+			when sal>3000 then sal*0.15
+			else sal
+	  end 'Tax'
+from emp 
+where sal>2000
+order by sal desc;  // 大到小排列
+
+
+
+select ename,job,sal,sal*12 annual 
+from emp
+order by annual;
+
+
+select ename,job,sal,sal*12 annual 
+from emp
+order by 1;
+

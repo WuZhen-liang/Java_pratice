@@ -1,0 +1,11 @@
+select top(2)  ename,job,sal,sal*12 annual,HIREDATE 
+from emp
+order by sal desc;
+
+select top(2) with ties ename,job,sal,sal*12 annual,HIREDATE 
+from emp
+order by sal desc;
+
+select top(50) percent ename,job,sal,sal*12 annual,HIREDATE 
+from emp
+order by sal desc;

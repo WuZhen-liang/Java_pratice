@@ -1,0 +1,11 @@
+select empno,ename,job,sal,deptno,
+	  case deptno
+			when 10 then sal*1.2
+			when 20 then sal*1.1
+			else sal
+	end '½ÕÁ~«áÁ~¸ê'
+from emp;
+
+//-----------------------------------------------
+
+Case 

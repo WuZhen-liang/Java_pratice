@@ -1,0 +1,2 @@
+select * from emp where sal between 1900 and 2800;
+select * from emp where ename between 'JACK' AND 'MARY';
