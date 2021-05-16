@@ -1,5 +1,8 @@
 package Practiceinterface;
 
+import java.util.Date;
+import java.util.GregorianCalendar;
+
 public abstract class Product { 
 	//有抽象方法必為抽象類別
 	//抽象類別不一定會有抽象方法
@@ -40,6 +43,11 @@ public abstract class Product {
 	 public  String desc() {   //+final 的方法不能夠改寫的
 		return String.format("名稱：%s,價錢:%d", name,price);
 	}
-	
+		public static Date getDate(int year,int month,int dayOfMonth) {
+			
+			GregorianCalendar calendar = new GregorianCalendar(year, month-1, dayOfMonth);
+			Date date = calendar.getTime();
+			return date;
+		}
 	
 }

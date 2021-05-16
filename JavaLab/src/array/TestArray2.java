@@ -30,8 +30,8 @@ public class TestArray2 {
 //	    	for(int k :  a) {
 //	    		System.out.println(k);
 	    	}
-	    }
+	    
 		
-	}
+	
 
 }

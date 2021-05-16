@@ -7,10 +7,10 @@ public class company {
 	protected String ename;
 	protected String detm;
 	
-	public  conpany(int empno, String ename) {
-		this.empno = empno;
-		this.ename = ename;
-	}
+//	public  conpany(int empno, String ename) {
+//		this.empno = empno;
+//		this.ename = ename;
+//	}
 		
 	
 }

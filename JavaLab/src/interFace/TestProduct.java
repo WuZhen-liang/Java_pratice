@@ -14,7 +14,7 @@ public class TestProduct {
 		//Notebook 具備兩個型態,一個是本身的Notebook,另一個繼承來的Product
 		NoteBook nb = new NoteBook("Asus",30000,365);
 		System.out.println(nb.desc());		
-
+   
 		Product item = nb; //Notebook -> Product 子類別轉父類別
 		System.out.println(item instanceof NoteBook);//true
 		if (item instanceof NoteBook) {
