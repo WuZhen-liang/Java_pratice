@@ -2,7 +2,7 @@ package interFace;
 //extend class :Product 為父類別,NoteBook 為子類別
 // ctrl+1:fix
 public  class NoteBook extends Product implements Warrantable{
-	// Notebook 具備三種型態:Notebook,Product,Warrantable
+	// Notebook 具備四種型態:Notebook,Product,Warrantable,Object
 	@Override
 	public int 保固天數() {
 		return warranty;
