@@ -1,6 +1,7 @@
 package collection;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
@@ -8,8 +9,12 @@ public class TestArrayList {
 
 	public static void main(String[] args) {
 		
-		List<String> list = new ArrayList<>();
+		List<String> list2 = Arrays.asList("Hello","World");
+		List<Integer> list3 = Arrays.asList(1,2,3);
 		
+		
+				
+		List<String> list = new ArrayList<>();
 		list.add("hello"); //0
 		list.add("world"); //1
 //		Double d = new Double(3.0); //3.0的物件,boxing
