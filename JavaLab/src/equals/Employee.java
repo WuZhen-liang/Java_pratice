@@ -27,7 +27,7 @@ public class Employee {
 	public int hashCode() {
 		//回傳代表物件的數字,通常會跟你equals中比較屬性有關
 		//藉用String hashcode滿足java的規範
-		return id.hashCode();
+		return id.hashCode(); 
 	}
 	
 	@Override

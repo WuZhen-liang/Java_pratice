@@ -17,7 +17,7 @@ public class  Superman implements Lawyer,Accountant{
 		
 		s.訴訟();
  		s.報稅();
-
+ 		//Anonmyous Class
  		Accountant acc = new Accountant() {
 			@Override
 			public void 報稅() {
