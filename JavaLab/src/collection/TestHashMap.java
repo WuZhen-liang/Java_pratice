@@ -5,6 +5,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
+import java.util.function.BiConsumer;
 
 public class TestHashMap {
 
@@ -42,6 +43,20 @@ public class TestHashMap {
 //			System.out.println(e.toString());			
 		}
 		System.out.println("薪水總和"+sum);
+		
+		System.out.println("----------forEach----------");
+		
+		BiConsumer<String, Integer> consumer = (key , value) ->{
+			System.out.println("key="+key+",value="+value);
+		};
+		map.forEach(consumer);;
+		//method referance
+		map.forEach(TestHashMap::bbbb);
+		
 	}
+	public static void bbbb(String key , Integer value) {
+		System.out.println("key="+key+",value="+value);
+	}
+		
 
 }

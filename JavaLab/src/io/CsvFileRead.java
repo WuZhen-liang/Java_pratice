@@ -7,6 +7,8 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import com.sun.jmx.interceptor.DefaultMBeanServerInterceptor;
 
@@ -32,21 +34,33 @@ public class CsvFileRead  {
 				Scanner scanner = new Scanner(column[2]);
 				String answer = scanner.nextLine();
 //				System.out.println(answer);
-				if (answer.equals("薪水")) {
+				if (isContainChinese(answer)) {
 					continue;
 				}
 				else {
-					int selection = Integer.parseInt(answer);
-					System.out.println(selection);					
-					salary_sum = salary_sum+selection;
+					int salrayData = Integer.parseInt(answer);
+//					System.out.println(selection);					
+					salary_sum = salary_sum+salrayData;
 				}
  			}
-			System.out.println("salary:"+salary_sum);
+			System.out.println("salary_sum:"+salary_sum);
 		} 
 		catch (IOException e) {
 			e.printStackTrace();
 		}
 
 	}
+	public static boolean isContainChinese(String str) {
+		Pattern p = Pattern.compile("[\u4e00-\u9fa5]"); //use Unicode編碼來判斷 中文區間:0x4e00--0x9fbb
 
-}
+		Matcher m = p.matcher(str);
+
+		if (m.find()) {
+		return true;
+
+		}
+		return false;
+
+	}
+	
+}	

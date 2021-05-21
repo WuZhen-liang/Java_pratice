@@ -18,6 +18,8 @@ public class  Superman implements Lawyer,Accountant{
 		s.訴訟();
  		s.報稅();
  		//Anonmyous Class
+ 		//lambda:Function Interface,介面上只有一個抽象方法
+ 		Accountant acc1 = () ->System.out.println("綜合所得稅");
  		Accountant acc = new Accountant() {
 			@Override
 			public void 報稅() {

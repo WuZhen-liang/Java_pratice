@@ -47,6 +47,14 @@ public class TestFile  {
 			}
 		}    
 		);
+		Comparator<File> com = (o1,o2) ->{
+			if (o1.length() > o2.length()) {
+					return 1;
+				}
+				else{					
+					return -1;
+				}
+		};
 //		Set set = new TreeSet(com);	//my method
 		File dir = new File("C:\\java");
 		File[] list = dir.listFiles();

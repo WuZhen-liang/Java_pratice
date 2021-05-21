@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
+import java.util.function.Consumer;
 
 public class TestArrayList {
 
@@ -17,6 +18,7 @@ public class TestArrayList {
 		List<String> list = new ArrayList<>();
 		list.add("hello"); //0
 		list.add("world"); //1
+		System.out.println(list);
 //		Double d = new Double(3.0); //3.0的物件,boxing
 //		double e = d.doubleValue();//unboxing
 //		list.add(d); //2
@@ -50,7 +52,18 @@ public class TestArrayList {
 		for( String item : list ) {
 			System.out.println(item);
 		}
+		System.out.println("------lambda-------");
+		//comsumer
+		//lambda
+		Consumer<String> consumer = (item)->System.out.println(item);
+		//Method reference
+		Consumer<String> consumer1 = System.out::println;
+		Consumer<String> consumer2 = TestArrayList::aaaa;
+		list.forEach(TestArrayList::aaaa);
 		
 	}
-
+	//方法的型態跟Consumer一樣,傳入一個參數
+	public static void aaaa(String item) {
+		System.out.println(item);
+	}
 }

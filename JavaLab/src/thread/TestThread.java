@@ -9,6 +9,9 @@ public class TestThread {
 		t1.start();//開始執行,不會直接呼叫run方法
 		*/
 		//客戶不允許你使用anonymous class ,TestThread$1.class
+		//非同步
+//		System.exit(0);//強制中斷
+//		Runtime.getRuntime().exit(0);
 		Thread t2 = new Thread(new Runnable() {
 			
 			@Override
@@ -28,7 +31,16 @@ public class TestThread {
 		
 		});
 		t2.setName("Runnable倒數");
+//		t2.setPriority(10);
+//		t2.setDaemon(true);//設成背景執行緒,java不會等他執行完
 		t2.start();
+		try {
+			t2.join(); //同步
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		System.out.println("t2 alive = "+t2.isAlive());
+		System.out.println(Thread.currentThread());
 		System.out.println("Main方法結束");
 		
 	}
